@@ -1,0 +1,19 @@
+services:
+  grpc-alarm-panel:
+    image: shinwoohipo/grpc_alarm_panel:latest
+    container_name: grpc_alarm_panel
+    env_file:
+      - .env
+    volumes:
+      - /home/kkt/django-nas:/drf_media
+    
+    ports:
+      - "50054:50054"  # 호스트 포트:컨테이너 포트
+
+    restart: always
+    command: ["python3", "server.py"]
+
+  
+
+
+ 

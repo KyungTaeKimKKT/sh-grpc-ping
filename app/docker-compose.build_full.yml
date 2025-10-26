@@ -1,0 +1,7 @@
+
+services:
+  grpc-alarm-panel:
+    build:
+      context: .
+      dockerfile: ./Dockerfile.full
+    image: shinwoohipo/grpc_alarm_panel:latest
