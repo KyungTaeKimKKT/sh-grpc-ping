@@ -1,6 +1,6 @@
 # ===========================
 # Dockerfile: GRPC Ping Service (Slim)
-# docker build -t shinwoohipo/grpc-ping-service:1.0.0 .
+# docker build -t shinwoohipo/grpc-ping-service:1.1.0 .
 # ===========================
 FROM python:3.11-slim
 
